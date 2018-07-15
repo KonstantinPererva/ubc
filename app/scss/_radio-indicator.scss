@@ -1,0 +1,15 @@
+.radio-indicator {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  margin: 15px auto 8px;
+  transition: background .25s;
+  padding: 4px 0 0 3px;
+
+  &__ico {
+    display: block;
+    transition: opacity .25s;
+  }
+}

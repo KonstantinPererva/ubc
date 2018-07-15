@@ -1,0 +1,189 @@
+.form {
+
+  &__row {
+    position: relative;
+    padding: 0 0 10px;
+
+    &_height {
+      height: 244px;
+    }
+
+    &_error {
+      border-color: $c-error;
+      background: $c-bg-error;
+    }
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    height: 74px;
+    border: 1px solid $c-gray-light;
+    border-radius: 8px;
+    font-size: 18px;
+    color: $c-text;
+    font-family: $ff-r;
+    padding: 28px 24px 0;
+
+    &:active,&:focus {
+      outline: none;
+    }
+
+    &:focus + .form__label {
+      font-size: 14px;
+      top: 12px;
+    }
+
+    &[value]:not([value=""]) + .form__label {
+      font-size: 14px;
+      top: 12px;
+    }
+  }
+
+  &__textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    background: transparent;
+    border: 1px solid $c-gray-light;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $c-text;
+    font-family: $ff-r;
+    padding: 34px 24px 8px;
+
+    &:active,&:focus {
+      outline: none;
+    }
+
+    &:focus + .form__label {
+      font-size: 14px;
+      top: 12px;
+    }
+  }
+
+  &__field {
+
+    &_active + .form__label {
+      font-size: 14px;
+      top: 12px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 18px;
+    font-family: $ff-r;
+    color: $c-placeholder;
+    z-index: 1;
+    transition: .2s;
+    user-select: none;
+  }
+
+  &__btn-submit {
+    user-select: none;
+    margin-top: 20px;
+
+    &_marg-none {
+      margin-top: 0;
+    }
+  }
+
+  &__ico {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__radio {
+    display: none;
+
+    &:checked+.form__label-radio>.form__ico {
+      fill: $c-main;
+    }
+
+    &:checked+.form__label-radio>.radio-indicator {
+      background: $c-main;
+      border: $c-main;
+    }
+  }
+
+  &__label-radio {
+    cursor: pointer;
+
+    &_active {
+
+      & .form__ico {
+        fill: $c-main;
+      }
+
+      & .radio-indicator {
+        border-color: $c-main;
+        background: $c-main;
+
+        &__ico {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__ico {
+    fill: #d8d8d8;
+  }
+
+  &__wrap {
+    text-align: center;
+  }
+
+  &__col {
+    display: inline-block;
+    margin: 0 18px;
+    padding: 24px 0 30px;
+
+    &_card {
+      width: 80px;
+    }
+
+    &_cash {
+      width: 100px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $ff-s;
+  }
+}
+
+.form-delivery {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 24px 0 0;
+}
+
+.form-hazte-una-cuenta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-payment {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.form-profile {
+  margin: 0;
+
+  &_password  {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,52 @@
+.tabs {
+  padding: 37px 0 55px;
+  background: $main;
+}
+
+.tab-content {
+  display: none;
+  padding: 36px 0 0 45px;
+
+  @include text(#fff, $reg, 14px);
+  line-height: 28px;
+  letter-spacing: .5px;
+}
+
+.tab {
+  flex-basis: 267px;
+  flex-shrink: 0;
+  padding: 40px 30px 0 0;
+  margin: 0 0 0 -12px;
+
+  background: url("../img/shadow.png") no-repeat center right;
+
+  &__item {
+    margin: 0 0 15px;
+
+    @include text(#ffd5b3, $bold, 16px);
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    &.active {
+      position: relative;
+      color: #fff;
+      cursor: default;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 14px;
+        background: url("../img/triangle.png") no-repeat center;
+      }
+    }
+  }
+
+  &-wrap {
+    display: flex;
+  }
+}

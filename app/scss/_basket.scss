@@ -1,0 +1,84 @@
+.basket {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 15px 56px;
+
+  &__item {
+
+    &_active {
+
+      & .basket-indicator__text {
+        color: $c-main;
+      }
+    }
+  }
+
+  &-error {
+    display: block;
+    padding: 10px 0 0 3px;
+
+    &__text {
+      display: block;
+      font-size: 16px;
+      font-family: $ff-b;
+      color: $c-main;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+.basket-indicator {
+  position: relative;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+
+  &__text {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    font-family: $ff-s;
+    color: #000;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 500px;
+      right: 100%;
+      margin: auto 12px auto auto;
+      top: 0;
+      bottom: 0;
+      background: #eeeeee;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 2px;
+      width: 500px;
+      left: 100%;
+      margin: auto auto auto 12px;
+      top: 0;
+      bottom: 0;
+      background: #eeeeee;
+    }
+  }
+
+  &__inner {
+    display: block;
+    overflow: hidden;
+  }
+
+  &__ico {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -30px;
+  }
+}
