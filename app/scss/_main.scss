@@ -1,5 +1,6 @@
 .main {
   flex-grow: 1;
+  display: block;
 
   @media screen and (max-width: 1200px) {
     width: 1200px;

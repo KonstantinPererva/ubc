@@ -1,6 +1,8 @@
 .header {
   height: 80px;
   padding: 10px 0;
+  position: relative;
+  z-index: 10;
 
   @media screen and (max-width: 1200px) {
     width: 1200px;
@@ -15,6 +17,7 @@
 }
 
 .logo {
+  display: block;
   position: absolute;
   width: 130px;
 }
