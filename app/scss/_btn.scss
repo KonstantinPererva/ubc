@@ -54,6 +54,10 @@
 
   &_bg-blue {
     background: $c-blue;
+
+    &:hover {
+      background: #005fff;
+    }
   }
 
   &_bg-light {
@@ -381,6 +385,10 @@
   cursor: pointer;
   background: $c-main;
   border-radius: 50%;
+
+  &:hover {
+    background: $hover;
+  }
 
   &__ico {
     margin: auto;

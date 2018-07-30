@@ -9,14 +9,15 @@
     position: relative;
     width: 397px;
     flex-shrink: 0;
-    padding: 20px 14px 14px 20px;
+    padding: 10px 14px 10px 10px;
   }
 
   &__title {
     font-size: 22px;
     line-height: 27px;
     font-family: $ff-b;
-    margin: 0 0 26px;
+    margin: 0;
+    padding: 14px 0 20px 10px;
     letter-spacing: .03em;
   }
 
@@ -32,7 +33,7 @@
     width: 575px;
     height: 396px;
     overflow: hidden;
-    border-radius: 0 46px 46px 0;
+    border-radius: 46px;
   }
 
   &__img {
@@ -45,7 +46,8 @@
 }
 
 .product-data {
-  margin: 0 0 30px;
+  margin: 0;
+  padding: 6px 0 15px 10px;
 
   &__list {
     display: flex;
@@ -88,7 +90,9 @@
 }
 
 .product-descr {
-  margin: 0 0 25px;
+  position: relative;
+  margin: 0;
+  padding: 15px 0 112px 10px;
 
   &__list {
     list-style: none;
@@ -97,7 +101,12 @@
   }
 
   &__hold {
-    margin: 0 0 10px;
+    height: 84px;
+    overflow: hidden;
+
+    &_active {
+      height: auto;
+    }
   }
 
   &__title {
@@ -113,5 +122,40 @@
     font-size: 14px;
     font-family: $ff-r;
     letter-spacing: 0.025em;
+
+    & h2 {
+      font-size: 18px;
+    }
+
+    & h3 {
+      font-size: 16px;
+    }
+
+    & h4 {
+      font-size: 14px;
+    }
+
+    & h5 {
+      font-size: 13px;
+    }
+
+    & h6 {
+      font-size: 12px;
+    }
+
+    & p, & h1, & h2, & h3, & h4, & h5, & h6, & ul, & ol {
+      margin: 0;
+      padding: 0 0 10px;
+    }
+
+    & ul {
+      list-style: disc;
+      padding: 0 30px 10px;
+    }
+
+    & ol {
+      list-style: decimal;
+      padding: 0 30px 10px;
+    }
   }
 }

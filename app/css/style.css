@@ -96,6 +96,8 @@ a {
             border-radius: 50%;
     vertical-align: top;
     cursor: pointer; }
+    .order-amount__minus:hover, .order-amount__plus:hover {
+      background: #ff9740; }
   .order-amount__minus {
     left: 8px; }
   .order-amount__plus {
@@ -387,31 +389,31 @@ a {
 
 @font-face {
   font-family: "SUR";
-  src: url("/fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("/fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "SUB";
-  src: url("/fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("/fonts/SegoeUIRegular/SegoeUIBold.ttf") format("truetype");
+  src: url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "SUI";
-  src: url("/fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("/fonts/SegoeUIRegular/SegoeUIItalic.ttf") format("truetype");
+  src: url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIItalic.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "SUL";
-  src: url("/fonts/SegoeUILight/SegoeUILight.woff") format("woff"), url("/fonts/SegoeUIRegular/SegoeUILight.ttf") format("truetype");
+  src: url("../fonts/SegoeUILight/SegoeUILight.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUILight.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 @font-face {
   font-family: "SUS";
-  src: url("/fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"), url("/fonts/SegoeUIRegular/SegoeUISemiBold.ttf") format("truetype");
+  src: url("../fonts/SegoeUISemiBold/SegoeUISemiBold.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUISemiBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
@@ -479,6 +481,8 @@ a {
     background: #ff7404; }
   .btn_bg-blue {
     background: #448aff; }
+    .btn_bg-blue:hover {
+      background: #005fff; }
   .btn_bg-light {
     background: #ff9138; }
   .btn_letter-main {
@@ -726,6 +730,8 @@ a {
   background: #ff7404;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
+  .btn-plus:hover {
+    background: #ff9740; }
   .btn-plus__ico {
     margin: auto; }
 
@@ -827,7 +833,8 @@ a {
             user-select: none; }
   .footer__logo {
     width: 134px;
-    height: 74px; }
+    height: 74px;
+    vertical-align: top; }
   .footer__copy {
     display: block;
     text-align: center;
@@ -1039,7 +1046,9 @@ a {
 .logo {
   display: block;
   position: absolute;
-  width: 130px; }
+  width: 174px;
+  top: 0;
+  left: 15px; }
 
 .nav {
   display: -webkit-box;
@@ -1133,7 +1142,7 @@ a {
     left: 0;
     width: 100%;
     height: 48px;
-    padding: 13px 18px 15px 30px;
+    padding: 13px 15px 15px 15px;
     background: #fff;
     border: 1px solid #ff7405;
     -webkit-border-radius: 25px;
@@ -1144,12 +1153,12 @@ a {
   .box-info:hover .box-info-current {
     background-image: url("../img/arrow-top.svg"); }
   .box-info-current {
-    padding: 0 50px 0 0;
+    padding: 0 38px 0 9px;
     background-image: url("../img/arrow-down.svg");
     -webkit-background-size: 20px 20px;
             background-size: 20px;
     background-repeat: no-repeat;
-    background-position: center right; }
+    background-position: 220px center; }
     .box-info-current__title {
       color: #ff7405;
       font-family: "Segoe UI", sans-serif;
@@ -1168,7 +1177,14 @@ a {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 7px 0; }
+    padding: 7px 9px 7px 9px;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    -webkit-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s; }
+    .info-list-link:hover {
+      background: rgba(255, 116, 5, 0.05); }
     .info-list-link__icn {
       width: 20px;
       height: 20px; }
@@ -1600,7 +1616,7 @@ a {
       bottom: 0;
       right: 0;
       left: 0;
-      background: rgba(255, 116, 4, 0.72) url(/images/check-mark.png) no-repeat center;
+      background: rgba(255, 116, 4, 0.72) url(../img/check-mark.png) no-repeat center;
       -webkit-background-size: 30% 30%;
               background-size: 30%; }
   .dish-select__img {
@@ -1773,9 +1789,9 @@ a {
 
 .dish-add {
   position: absolute;
-  bottom: 15px;
-  left: 20px;
-  right: 15px;
+  bottom: 0;
+  left: 0;
+  right: -4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1787,10 +1803,23 @@ a {
   outline: none;
   -moz-user-select: none; }
   .dish-add__pointer {
-    padding: 50px 0 0; }
+    padding: 47px 0 0; }
 
 .dish-add-pointer {
-  display: block; }
+  display: inline-block;
+  cursor: pointer;
+  padding: 6px 10px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .dish-add-pointer:hover {
+    background: rgba(255, 116, 5, 0.05); }
   .dish-add-pointer__text {
     display: inline-block;
     color: #ff7404;
@@ -1798,11 +1827,18 @@ a {
     text-transform: uppercase;
     font-size: 16px;
     vertical-align: middle;
-    margin: 0 3px 0 0; }
+    padding: 0 3px 0 0; }
   .dish-add-pointer__ico {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 0 4px; }
+    padding: 0 0 4px;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+    .dish-add-pointer__ico_active {
+      -webkit-transform: rotate(0);
+          -ms-transform: rotate(0);
+              transform: rotate(0); }
   .dish-add-pointer__arrow {
     display: block; }
     .dish-add-pointer__arrow_first {
@@ -1826,12 +1862,13 @@ a {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
-    padding: 20px 14px 14px 20px; }
+    padding: 10px 14px 10px 10px; }
   .product__title {
     font-size: 22px;
     line-height: 27px;
     font-family: "SUB";
-    margin: 0 0 26px;
+    margin: 0;
+    padding: 14px 0 20px 10px;
     letter-spacing: .03em; }
   .product__text {
     font-size: 14px;
@@ -1845,8 +1882,8 @@ a {
     width: 575px;
     height: 396px;
     overflow: hidden;
-    -webkit-border-radius: 0 46px 46px 0;
-            border-radius: 0 46px 46px 0; }
+    -webkit-border-radius: 46px;
+            border-radius: 46px; }
   .product__img {
     position: absolute;
     top: 0;
@@ -1855,7 +1892,8 @@ a {
     vertical-align: bottom; }
 
 .product-data {
-  margin: 0 0 30px; }
+  margin: 0;
+  padding: 6px 0 15px 10px; }
   .product-data__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1889,13 +1927,18 @@ a {
     vertical-align: middle; }
 
 .product-descr {
-  margin: 0 0 25px; }
+  position: relative;
+  margin: 0;
+  padding: 15px 0 112px 10px; }
   .product-descr__list {
     list-style: none;
     padding: 0;
     margin: 0; }
   .product-descr__hold {
-    margin: 0 0 10px; }
+    height: 84px;
+    overflow: hidden; }
+    .product-descr__hold_active {
+      height: auto; }
   .product-descr__title {
     display: block;
     font-size: 20px;
@@ -1907,6 +1950,25 @@ a {
     font-size: 14px;
     font-family: "SUR";
     letter-spacing: 0.025em; }
+    .product-descr__text h2 {
+      font-size: 18px; }
+    .product-descr__text h3 {
+      font-size: 16px; }
+    .product-descr__text h4 {
+      font-size: 14px; }
+    .product-descr__text h5 {
+      font-size: 13px; }
+    .product-descr__text h6 {
+      font-size: 12px; }
+    .product-descr__text p, .product-descr__text h1, .product-descr__text h2, .product-descr__text h3, .product-descr__text h4, .product-descr__text h5, .product-descr__text h6, .product-descr__text ul, .product-descr__text ol {
+      margin: 0;
+      padding: 0 0 10px; }
+    .product-descr__text ul {
+      list-style: disc;
+      padding: 0 30px 10px; }
+    .product-descr__text ol {
+      list-style: decimal;
+      padding: 0 30px 10px; }
 
 .menu-weekly {
   padding: 30px 0 0; }

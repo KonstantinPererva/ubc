@@ -41,6 +41,10 @@
     border-radius: 50%;
     vertical-align: top;
     cursor: pointer;
+
+    &:hover {
+      background: $hover;
+    }
   }
 
   &__minus {
