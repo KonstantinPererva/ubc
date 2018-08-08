@@ -6,10 +6,17 @@
   box-shadow: 0 4px 13px rgba(0,0,0,.08);
 
   &_detail {
+    display: block;
     box-shadow: none;
     border-radius: 0;
     margin: 0;
-    overflow: visible;
+    padding: 0 0 10px;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
   }
 
   &__hold {
@@ -20,6 +27,8 @@
 
     &_detail {
       width: 495px;
+      float: right;
+      padding: 10px 14px 0 10px;
     }
   }
 
@@ -49,6 +58,13 @@
     &_detail {
       width: 675px;
       height: 461px;
+      float: left;
+    }
+
+    &_fixed {
+      float: none;
+      position: fixed;
+      top: 0;
     }
   }
 

@@ -231,5 +231,19 @@
     </div>
   </footer>
 </div>
+
+<script>
+    var dishImg = document.querySelector('.product__wrap-img_detail');
+
+    var dishImgTop = dishImg.getBoundingClientRect().top + window.pageYOffset;
+
+    window.onscroll = function() {
+        if (dishImg.classList.contains('product__wrap-img_fixed') && window.pageYOffset < dishImgTop) {
+            dishImg.classList.remove('product__wrap-img_fixed');
+        } else if (window.pageYOffset > dishImgTop) {
+            dishImg.classList.add('product__wrap-img_fixed');
+        }
+    };
+</script>
 </body>
 </html>
