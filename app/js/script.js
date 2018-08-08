@@ -9,6 +9,25 @@ document.addEventListener('DOMContentLoaded', function () {
             basketItem[key].classList.add('basket__item_active');
         }
     });
+
+    // open and close dish info
+    var btnMoreInfo = document.querySelectorAll('.dish-add-pointer');
+    var arrowBtnMoreInfo = document.querySelectorAll('.dish-add-pointer__ico');
+    var container = document.querySelector('.product-descr__hold');
+
+    Array.prototype.forEach.call(btnMoreInfo, function (el) {
+        el.onclick = function () {
+            Array.prototype.forEach.call(arrowBtnMoreInfo, function (ar) {
+                if (ar.classList.contains('dish-add-pointer__ico_active')) {
+                    ar.classList.remove('dish-add-pointer__ico_active');
+                    container.classList.remove('product-descr__hold_active');
+                } else {
+                    ar.classList.add('dish-add-pointer__ico_active');
+                    container.classList.add('product-descr__hold_active');
+                }
+            })
+        }
+    })
 });
 
     var i, tabcontent, tablinks;
