@@ -5,11 +5,22 @@
   overflow: hidden;
   box-shadow: 0 4px 13px rgba(0,0,0,.08);
 
+  &_detail {
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    overflow: visible;
+  }
+
   &__hold {
     position: relative;
     width: 397px;
     flex-shrink: 0;
     padding: 10px 14px 10px 10px;
+
+    &_detail {
+      width: 495px;
+    }
   }
 
   &__title {
@@ -34,6 +45,11 @@
     height: 396px;
     overflow: hidden;
     border-radius: 46px;
+
+    &_detail {
+      width: 675px;
+      height: 461px;
+    }
   }
 
   &__img {
@@ -94,6 +110,10 @@
   margin: 0;
   padding: 15px 0 112px 10px;
 
+  &_detail {
+    padding: 15px 0 60px 10px;
+  }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -107,13 +127,18 @@
     &_active {
       height: auto;
     }
+
+    &_detail {
+      height: auto;
+      overflow: visible;
+    }
   }
 
   &__title {
     display: block;
     font-size: 20px;
     font-family: $ff-s;
-    margin: 0 0 5px;
+    padding: 0 0 5px;
     letter-spacing: 0.025em;
   }
 
@@ -124,38 +149,50 @@
     letter-spacing: 0.025em;
 
     & h2 {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     & h3 {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     & h4 {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     & h5 {
-      font-size: 13px;
+      font-size: 14px;
     }
 
     & h6 {
       font-size: 12px;
     }
 
-    & p, & h1, & h2, & h3, & h4, & h5, & h6, & ul, & ol {
+    & p {
+      padding: 0 0 20px;
+      margin: 0;
+    }
+
+    & h1, & h2, & h3, & h4, & h5, & h6 {
+      margin: 0;
+      padding: 10px 0;
+    }
+
+    & ul, & ol {
       margin: 0;
       padding: 0 0 10px;
     }
 
     & ul {
       list-style: disc;
-      padding: 0 30px 10px;
+      padding: 0 0 20px;
+      list-style-position: inside;
     }
 
     & ol {
       list-style: decimal;
-      padding: 0 30px 10px;
+      padding: 0 0 20px;
+      list-style-position: inside;
     }
   }
 }

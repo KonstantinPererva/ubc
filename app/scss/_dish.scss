@@ -11,6 +11,10 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  &_detail {
+    padding: 0 15px;
+  }
 }
 
 .dish-order {
@@ -76,6 +80,10 @@
 .dish-select {
   flex-shrink: 0;
   width: 972px;
+
+  &_detail {
+    width: 100%;
+  }
 
   &__list {
     display: flex;
@@ -345,6 +353,10 @@
 
   &__pointer {
     padding: 47px 0 0;
+
+    &_detail {
+      padding: 0;
+    }
   }
 }
 
@@ -379,6 +391,10 @@
     &_active {
       transform: rotate(0);
     }
+
+    &_detail {
+      transform: rotate(90deg);
+    }
   }
 
   &__arrow {
@@ -387,6 +403,11 @@
     &_first {
       position: relative;
       top: 3px;
+    }
+
+    &_detail {
+      position: relative;
+      top: 11px;
     }
 
     &_last {

@@ -893,6 +893,7 @@ a {
 .col-md-10,
 .col-md-11,
 .col-md-12 {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -ms-flex: 0 0 auto;
@@ -1502,6 +1503,8 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     text-align: center; }
+  .dish_detail {
+    padding: 0 15px; }
 
 .dish-order {
   -webkit-border-radius: 16px;
@@ -1553,6 +1556,8 @@ a {
       -ms-flex-negative: 0;
           flex-shrink: 0;
   width: 972px; }
+  .dish-select_detail {
+    width: 100%; }
   .dish-select__list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1804,6 +1809,8 @@ a {
   -moz-user-select: none; }
   .dish-add__pointer {
     padding: 47px 0 0; }
+    .dish-add__pointer_detail {
+      padding: 0; }
 
 .dish-add-pointer {
   display: inline-block;
@@ -1839,11 +1846,18 @@ a {
       -webkit-transform: rotate(0);
           -ms-transform: rotate(0);
               transform: rotate(0); }
+    .dish-add-pointer__ico_detail {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
   .dish-add-pointer__arrow {
     display: block; }
     .dish-add-pointer__arrow_first {
       position: relative;
       top: 3px; }
+    .dish-add-pointer__arrow_detail {
+      position: relative;
+      top: 11px; }
 
 .product {
   display: -webkit-box;
@@ -1856,6 +1870,13 @@ a {
   overflow: hidden;
   -webkit-box-shadow: 0 4px 13px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 13px rgba(0, 0, 0, 0.08); }
+  .product_detail {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    margin: 0;
+    overflow: visible; }
   .product__hold {
     position: relative;
     width: 397px;
@@ -1863,6 +1884,8 @@ a {
         -ms-flex-negative: 0;
             flex-shrink: 0;
     padding: 10px 14px 10px 10px; }
+    .product__hold_detail {
+      width: 495px; }
   .product__title {
     font-size: 22px;
     line-height: 27px;
@@ -1884,6 +1907,9 @@ a {
     overflow: hidden;
     -webkit-border-radius: 46px;
             border-radius: 46px; }
+    .product__wrap-img_detail {
+      width: 675px;
+      height: 461px; }
   .product__img {
     position: absolute;
     top: 0;
@@ -1930,6 +1956,8 @@ a {
   position: relative;
   margin: 0;
   padding: 15px 0 112px 10px; }
+  .product-descr_detail {
+    padding: 15px 0 60px 10px; }
   .product-descr__list {
     list-style: none;
     padding: 0;
@@ -1939,11 +1967,14 @@ a {
     overflow: hidden; }
     .product-descr__hold_active {
       height: auto; }
+    .product-descr__hold_detail {
+      height: auto;
+      overflow: visible; }
   .product-descr__title {
     display: block;
     font-size: 20px;
     font-family: "SUS";
-    margin: 0 0 5px;
+    padding: 0 0 5px;
     letter-spacing: 0.025em; }
   .product-descr__text {
     display: block;
@@ -1951,26 +1982,34 @@ a {
     font-family: "SUR";
     letter-spacing: 0.025em; }
     .product-descr__text h2 {
-      font-size: 18px; }
+      font-size: 20px; }
     .product-descr__text h3 {
-      font-size: 16px; }
+      font-size: 18px; }
     .product-descr__text h4 {
-      font-size: 14px; }
+      font-size: 16px; }
     .product-descr__text h5 {
-      font-size: 13px; }
+      font-size: 14px; }
     .product-descr__text h6 {
       font-size: 12px; }
-    .product-descr__text p, .product-descr__text h1, .product-descr__text h2, .product-descr__text h3, .product-descr__text h4, .product-descr__text h5, .product-descr__text h6, .product-descr__text ul, .product-descr__text ol {
+    .product-descr__text p {
+      padding: 0 0 20px;
+      margin: 0; }
+    .product-descr__text h1, .product-descr__text h2, .product-descr__text h3, .product-descr__text h4, .product-descr__text h5, .product-descr__text h6 {
+      margin: 0;
+      padding: 10px 0; }
+    .product-descr__text ul, .product-descr__text ol {
       margin: 0;
       padding: 0 0 10px; }
     .product-descr__text ul {
       list-style: disc;
-      padding: 0 30px 10px; }
+      padding: 0 0 20px;
+      list-style-position: inside; }
     .product-descr__text ol {
       list-style: decimal;
-      padding: 0 30px 10px; }
+      padding: 0 0 20px;
+      list-style-position: inside; }
 
 .menu-weekly {
-  padding: 30px 0 0; }
+  padding: 40px 0 0; }
   .menu-weekly__order-amount {
     padding: 30px 0 20px; }
